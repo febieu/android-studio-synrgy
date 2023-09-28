@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".challenge.TestingA">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/battleship_gray"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIP CALCULATOR"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_b_i"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="36dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/rounded_layout"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_atas">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/semibold"
+            android:text="Amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_bawah" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/feldgrau"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/money_24_white"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/lato_i"
+                android:paddingRight="190dp"
+                android:text="0.00"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/amount" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/select_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/semibold"
+            android:text="Select Tip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_text" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/platinum"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/feldgrau"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="5%" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/feldgrau"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="10%" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/feldgrau"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="15%" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/feldgrau"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="25%" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@id/button_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/feldgrau"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="35%" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@id/button_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Custom"
+                android:background="@color/feldgrau"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/semibold"
+            android:text="People" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="1"/>
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="2"/>
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="3"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="4"/>
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="5"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Custom"
+                android:textSize="14sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/semibold"
+            android:text="Total" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/rounded_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/total"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="55dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rounded tip?"
+                android:textSize="12sp"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/sw_button"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:checked="false"
+                android:thumb="@drawable/thumb"
+                app:track="@drawable/track"
+                android:layout_marginLeft="150dp"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/feldgrau"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:elevation="10dp"
+            android:translationZ="10dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/money_24_white"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:background="@color/feldgrau"
+                android:text="0,00"
+                android:textSize="30sp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                 />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:text="Reset"
+            android:background="@color/battleship_gray"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="12dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
